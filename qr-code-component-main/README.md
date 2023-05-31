@@ -26,8 +26,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution Repo](https://github.com/TQKNG/Code-Challenge/edit/main/qr-code-component-main)
+- Live Site URL: [Solution Live](https://qrcard-six.vercel.app/)
 
 ## My process
 
