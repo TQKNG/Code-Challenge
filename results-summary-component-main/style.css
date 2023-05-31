@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap");
+
+:root {
+  /* Primary */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradient*/
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight:400;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrapper {
+  width: 45%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  gap:10px;
+}
+
+.section-wrapper{
+  min-width: 50%;
+  min-height: 100%;
+}
+
+
+.main-wrapper section:first-child{
+  background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color:var(--White);
+  border-radius: 20px;
+  font-size: 18px;
+
+}
+
+.main-wrapper section:first-child p{
+  padding:30px;
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.score-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height:150px;
+  border-radius: 100%;
+  background: linear-gradient(to bottom, var(--Violet-blue-circle), var(--Persian-blue-circle));
+  
+}
+
+.score-wrapper h1{
+  font-size:xx-large;
+  margin:0px;
+}
+.score-wrapper h5{
+  font-size:xx-small;
+  margin:0px;
+
+}
+
+.main-wrapper section:nth-child(2){
+  background-color: var(--Pale-blue);
+  display:flex;
+  flex-direction: column;
+}
+
+.summary-wrapper{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows: repeat(4, 30px);
+  grid-gap:10px;
+  margin-bottom: 50px;
+}
+
+.skill-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
