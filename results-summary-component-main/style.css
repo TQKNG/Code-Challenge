@@ -22,91 +22,192 @@
 
 html {
   font-family: "Hanken Grotesk", sans-serif;
-  font-weight:400;
+}
+
+/* Reset css */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .main-wrapper {
-  width: 45%;
-  height: 60%;
+  width: 32%;
+  height: 30%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding:20px;
-  gap:10px;
+  padding: 1rem;
+  gap: 2rem;
 }
 
-.section-wrapper{
+.section-wrapper {
   min-width: 50%;
-  min-height: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow-y: hidden;
 }
 
-
-.main-wrapper section:first-child{
-  background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
-  display:flex;
+/* Your results */
+.main-wrapper section:first-child {
+  background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue),
+    var(--Light-royal-blue)
+  );
+  display: flex;
   flex-direction: column;
   align-items: center;
-  color:var(--White);
-  border-radius: 20px;
-  font-size: 18px;
-
+  color: var(--Light-lavender);
+  font-weight: 500;
+  border-radius: 1rem;
 }
 
-.main-wrapper section:first-child p{
-  padding:30px;
+/* Your summary */
+.main-wrapper section:first-child p {
+  font-size: 0.65rem;
+  padding: 1.8rem;
   padding-top: 0px;
   margin-top: 0px;
   text-align: center;
 }
 
-.score-wrapper{
+.main-wrapper section:first-child h3 {
+  color: var(--White);
+  margin-bottom: 0.6rem;
+}
+
+.score-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height:150px;
+  width: 130px;
+  height: 130px;
   border-radius: 100%;
-  background: linear-gradient(to bottom, var(--Violet-blue-circle), var(--Persian-blue-circle));
-  
+  background: linear-gradient(
+    to bottom,
+    var(--Violet-blue-circle),
+    var(--Persian-blue-circle)
+  );
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.score-wrapper h1{
-  font-size:xx-large;
-  margin:0px;
+.score-wrapper h1 {
+  font-size: 2.3rem;
+  color: var(--White);
 }
-.score-wrapper h5{
-  font-size:xx-small;
-  margin:0px;
-
+.score-wrapper h5 {
+  font-size: 0.6rem;
 }
 
-.main-wrapper section:nth-child(2){
-  background-color: var(--Pale-blue);
-  display:flex;
+.main-wrapper section:nth-child(2) {
+  display: flex;
   flex-direction: column;
 }
 
-.summary-wrapper{
-  display:grid;
-  grid-template-columns:1fr;
+button {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: var(--White);
+  background: var(--Dark-gray-blue);
+  border-style: hidden;
+}
+.summary-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 30px);
-  grid-gap:10px;
-  margin-bottom: 50px;
+  grid-gap: 15px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
-.skill-wrapper{
+.skill-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.skill-wrapper h5 {
+  font-size: 0.7rem;
+}
+
+.individual-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.individual-skill h5 {
+  font-size: 0.7rem;
+}
+
+span {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    display: block;
+  }
+
+  .main-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-wrapper {
+    width: 100%;
+  }
+
+  .main-wrapper section:first-child {
+    padding-top: 2rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .main-wrapper section:first-child p {
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    padding: 0.5rem 2rem;
+  }
+
+  .main-wrapper section:first-child h3 {
+    margin-bottom: 0rem;
+  }
+
+  .score-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-wrapper section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+  }
+
+  .summary-wrapper {
+    padding: 1rem;
+    margin-top: 1rem;
+    grid-gap: 50px;
+  }
 }
