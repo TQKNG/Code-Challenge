@@ -4,7 +4,7 @@
 
 The challenge is to develop a results summary component that displays the overall score and individual skill scores in a card format. The goal is to create the component to closely match the responsive design provided.
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV).
 
 ## Table of contents
 
